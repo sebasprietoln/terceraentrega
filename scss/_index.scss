@@ -1,0 +1,59 @@
+$titletextblue: rgba(34,24,121,0.814);
+
+.contenidoindex {
+    display: block;
+    padding: 10px;
+    .textoindicetop {
+        text-align: center;
+        color: $titletextblue;
+        font-weight: bold;
+    }
+    .subtituloindice {
+        text-align: center;
+        color: $titletextblue;
+    }
+    .fotoprincipal {
+        width: 300px;
+        margin: auto;
+    }
+    .textoindicebottom {
+        list-style: none;
+        display: flex;
+        flex-direction: row; 
+        flex-wrap: wrap;
+        width: 60%;
+        text-align: center;
+        margin: 0px auto;
+    }
+    .invitacionindex {
+        width: 33%;
+    }
+    .thumbnailindex {
+        max-width: 30%;
+        border-radius: 25px;
+    }
+    .linkindex {
+        text-decoration: none;
+        &:link {
+            text-decoration: none;
+            color: $titletextblue;
+        }
+        &:visited {
+            text-decoration: none;
+            color: $titletextblue;
+        }
+        .textoinvite {
+            color: $titletextblue;
+            &:hover {
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .textoindicebottomn {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}

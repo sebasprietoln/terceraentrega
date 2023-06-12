@@ -1,0 +1,58 @@
+
+
+.indice {
+    height: 10vh;
+    background-color:$backgroundblue;
+    border-bottom: rgb(7, 7, 66) 2px solid;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+    justify-content: left;
+    padding-left: 10px;
+    .titulo {
+        width: 50%;
+        font-weight: bold;
+        font-style: italic;
+        position: relative;
+    }
+    }
+    .otrosindice {
+        width: 25%;
+        position: relative;
+    }
+    .botonindice {
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline; /*esto no se por que no funciona*/
+            font-weight: bold;
+        }
+        &:link {
+            text-decoration: none;
+            color: black;
+        }
+        &:visited {
+            text-decoration: none;
+            color: black;
+        }
+}
+
+@media (max-width: 480px) {
+    .indice {
+        display: block;
+        flex-direction: column;
+        justify-content: left;
+        padding: 10px;
+        height: 30vh;
+    }
+    .titulo {
+        padding-bottom: 10px;
+    }
+    .otrosindice {
+        padding-bottom: 10px;
+    }
+    .contenedor {
+        display: flex;
+        flex-direction: column;
+    }
+}

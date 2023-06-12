@@ -1,0 +1,58 @@
+.textointroductoriotiendas {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.recuadroubicaciones {
+    border: white 1px solid;
+    border-radius:25px;
+    text-align: center;
+    padding-top: 10px;
+    &:hover {
+        border: red 1px solid;
+    }
+}
+
+.nombretienda {
+    color: blue;
+}
+
+.dondeestamos {
+    max-width: 100%;
+}
+
+.ubicaciones {
+    width: 100%;
+    display: grid;
+    gap: 1px;
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-areas:
+    "ubicacion1 ubicacion2";
+}
+
+.ubicacion1 {
+    grid-area: ubicacion1;
+    margin: 0px auto;
+    text-align: center;   
+}
+
+.ubicacion2 {
+    grid-area: ubicacion2;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.direcciontiendas {
+    padding: 10px;
+}
+
+@media (max-width: 480px) {
+    .ubicaciones {
+        display: flex;
+        flex-wrap: wrap;
+      } 
+    .dondeestamos {
+        max-width: 80%;
+        height: auto;
+    }
+}

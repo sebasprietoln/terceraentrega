@@ -1,0 +1,20 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+$borderstyle: red 1px solid;
+$backgroundblue: rgb(94, 196, 255);
+
+@import "indice.scss";
+@import "footer.scss";
+@import "index.scss";
+@import "postres.scss";
+@import "ubicaciones.scss";
+@import "contacto.scss";
+@import "blogs.scss";

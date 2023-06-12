@@ -1,0 +1,280 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; }
+
+* {
+  font-family: Arial, Helvetica, sans-serif; }
+
+.indice {
+  height: 10vh;
+  background-color: #5ec4ff;
+  border-bottom: #070742 2px solid;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  align-items: center;
+  justify-content: left;
+  padding-left: 10px; }
+  .indice .titulo {
+    width: 50%;
+    font-weight: bold;
+    font-style: italic;
+    position: relative; }
+
+.otrosindice {
+  width: 25%;
+  position: relative; }
+
+.botonindice {
+  text-decoration: none; }
+  .botonindice:hover {
+    text-decoration: underline;
+    /*esto no se por que no funciona*/
+    font-weight: bold; }
+  .botonindice:link {
+    text-decoration: none;
+    color: black; }
+  .botonindice:visited {
+    text-decoration: none;
+    color: black; }
+
+@media (max-width: 480px) {
+  .indice {
+    display: block;
+    flex-direction: column;
+    justify-content: left;
+    padding: 10px;
+    height: 30vh; }
+  .titulo {
+    padding-bottom: 10px; }
+  .otrosindice {
+    padding-bottom: 10px; }
+  .contenedor {
+    display: flex;
+    flex-direction: column; } }
+
+/* Footer */
+.footercomun {
+  display: grid;
+  width: 100%;
+  height: 80px;
+  margin-top: auto;
+  align-items: center;
+  background-color: #5ec4ff;
+  gap: 1px;
+  border-top: #070742 2px solid;
+  position: relative;
+  grid-template-columns: 0.1fr 0.35fr 0.4fr;
+  grid-template-areas: "logofooter titulofooter listafootercontact"; }
+
+.logofooter {
+  grid-area: logofooter;
+  max-width: 60%; }
+
+.titulofooter {
+  grid-area: titulofooter;
+  font-weight: bold;
+  font-style: italic;
+  position: relative; }
+
+.listafootercontact {
+  grid-area: listafootercontact; }
+
+.titulocontactofooter {
+  text-align: center; }
+
+.fa-facebook {
+  background: black;
+  color: white;
+  padding: 3px; }
+
+.fa-twitter {
+  background: black;
+  color: white;
+  padding: 3px; }
+
+.fa-snapchat-ghost {
+  background: black;
+  color: white;
+  padding: 3px; }
+
+.fa-instagram {
+  background: black;
+  color: white;
+  padding: 3px; }
+
+@media (max-width: 480px) {
+  .footercomun {
+    display: grid;
+    height: 150px;
+    margin-top: auto;
+    grid-template-rows: 0.5fr 0.5fr;
+    grid-template-columns: 0.3fr 0.7fr;
+    grid-template-areas: "logofooter titulofooter" "listafootercontact listafootercontact"; }
+  .logofooter {
+    grid-area: logofooter; }
+  .titulofooter {
+    grid-area: titulofooter; }
+  .listafootercontact {
+    grid-area: listafootercontact; } }
+
+.contenidoindex {
+  display: block;
+  padding: 10px; }
+  .contenidoindex .textoindicetop {
+    text-align: center;
+    color: rgba(34, 24, 121, 0.814);
+    font-weight: bold; }
+  .contenidoindex .subtituloindice {
+    text-align: center;
+    color: rgba(34, 24, 121, 0.814); }
+  .contenidoindex .fotoprincipal {
+    width: 300px;
+    margin: auto; }
+  .contenidoindex .textoindicebottom {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 60%;
+    text-align: center;
+    margin: 0px auto; }
+  .contenidoindex .invitacionindex {
+    width: 33%; }
+  .contenidoindex .thumbnailindex {
+    max-width: 30%;
+    border-radius: 25px; }
+  .contenidoindex .linkindex {
+    text-decoration: none; }
+    .contenidoindex .linkindex:link {
+      text-decoration: none;
+      color: rgba(34, 24, 121, 0.814); }
+    .contenidoindex .linkindex:visited {
+      text-decoration: none;
+      color: rgba(34, 24, 121, 0.814); }
+    .contenidoindex .linkindex .textoinvite {
+      color: rgba(34, 24, 121, 0.814); }
+      .contenidoindex .linkindex .textoinvite:hover {
+        font-weight: bold; }
+
+@media (max-width: 480px) {
+  .textoindicebottomn {
+    flex-direction: column;
+    flex-wrap: wrap; } }
+
+.titulopostres {
+  color: red;
+  text-align: center; }
+
+.textopostres {
+  margin-top: 5px;
+  font-size: 15px;
+  text-align: center; }
+
+.recuadrocompras {
+  border: white 1px solid;
+  border-radius: 25px; }
+  .recuadrocompras:hover {
+    border: red 1px solid;
+    background-color: #ffb6c1; }
+
+.textointroductoriotiendas {
+  text-align: center;
+  text-decoration: underline; }
+
+.recuadroubicaciones {
+  border: white 1px solid;
+  border-radius: 25px;
+  text-align: center;
+  padding-top: 10px; }
+  .recuadroubicaciones:hover {
+    border: red 1px solid; }
+
+.nombretienda {
+  color: blue; }
+
+.dondeestamos {
+  max-width: 100%; }
+
+.ubicaciones {
+  width: 100%;
+  display: grid;
+  gap: 1px;
+  grid-template-columns: 0.5fr 0.5fr;
+  grid-template-areas: "ubicacion1 ubicacion2"; }
+
+.ubicacion1 {
+  grid-area: ubicacion1;
+  margin: 0px auto;
+  text-align: center; }
+
+.ubicacion2 {
+  grid-area: ubicacion2;
+  margin: 0px auto;
+  text-align: center; }
+
+.direcciontiendas {
+  padding: 10px; }
+
+@media (max-width: 480px) {
+  .ubicaciones {
+    display: flex;
+    flex-wrap: wrap; }
+  .dondeestamos {
+    max-width: 80%;
+    height: auto; } }
+
+.seccioncontactoypedido {
+  width: 90%;
+  min-height: 90%;
+  display: grid;
+  margin: 0px auto;
+  grid-template-columns: 0.5fr 0.5fr;
+  grid-template-areas: "infocontacto seccionformulariocontacto"; }
+
+.infocontacto {
+  grid-area: infocontacto;
+  margin: 0px auto;
+  padding: 10px;
+  width: 100%; }
+
+.seccionformulariocontacto {
+  grid-area: seccionformulariocontacto;
+  margin: 0px auto;
+  padding: 10px;
+  width: 100%; }
+
+.tituloform {
+  font-style: italic;
+  text-decoration: underline; }
+
+@media (max-width: 480px) {
+  .seccioncontactoypedido {
+    display: flex;
+    flex-wrap: wrap; } }
+
+.tituloblog {
+  margin: 10px auto;
+  color: #4943c2; }
+
+.blogs {
+  display: block; }
+
+.entradablog {
+  margin: 10px auto;
+  width: 50%;
+  text-align: left;
+  border: blueviolet 1px solid;
+  border-radius: 5px;
+  padding: 10px; }
+  .entradablog:hover {
+    background-color: #b8ecec; }
+  .entradablog .tituloentradablog {
+    text-align: left; }
+  .entradablog .ingredientesreceta {
+    list-style: none; }
+    .entradablog .ingredientesreceta .ingredientes {
+      text-decoration: underline; }
+  .entradablog .instruccionesreceta {
+    list-style-type: decimal; }

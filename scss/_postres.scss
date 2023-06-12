@@ -1,0 +1,22 @@
+
+
+.titulopostres {
+    color: red;
+    text-align: center;
+}
+
+.textopostres {
+    margin-top: 5px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.recuadrocompras {
+    border: white 1px solid;
+    border-radius:25px;
+    &:hover {
+        border: $borderstyle;
+        background-color: #ffb6c1;
+    }
+}
+
