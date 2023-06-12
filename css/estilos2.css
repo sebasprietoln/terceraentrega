@@ -177,7 +177,8 @@ body {
   border-radius: 25px; }
   .recuadrocompras:hover {
     border: red 1px solid;
-    background-color: #ffb6c1; }
+    background-color: #ffb6c1;
+    color: black; }
 
 .textointroductoriotiendas {
   text-align: center;
