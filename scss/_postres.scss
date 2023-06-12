@@ -3,6 +3,9 @@
 .titulopostres {
     color: red;
     text-align: center;
+    &:hover {
+        color: black;
+    }
 }
 
 .textopostres {
@@ -17,7 +20,6 @@
     &:hover {
         border: $borderstyle;
         background-color: #ffb6c1;
-        color: black;
     }
 }
 
